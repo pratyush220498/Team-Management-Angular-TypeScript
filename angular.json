@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "IndianCricketTeam"
+    }
+  },
+  "defaultProject": "IndianCricketTeam",
+  "cli": {
+    "analytics": false
+  }
 }

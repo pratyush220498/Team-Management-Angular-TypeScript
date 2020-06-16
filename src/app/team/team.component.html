@@ -1,0 +1,17 @@
+<section class="blog-list mtb-40">
+    <div class="container">
+        <h1>INDIAN CRICKET TEAM PLAYING 11</h1>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let player of players">
+                <div class="blog-box">
+                    <img src="{{player.playerImage}}" alt="blog1" />
+                    <h2>{{player.playerName}}</h2>
+                    <p>
+                        <span><h4>{{player.playerId}}</h4></span>
+                        <span><h3>{{player.playerPosition}}</h3></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

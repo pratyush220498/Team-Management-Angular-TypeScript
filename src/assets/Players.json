@@ -1,0 +1,37 @@
+[{
+        "playerId": 1,
+        "playerName": "Rohit Sharma",
+        "playerPosition": "Opener",
+        "playerImage": "../../../assets/images/rohit.jpg"
+    },
+    {
+        "playerId": 2,
+        "playerName": "Virat Kohli",
+        "playerPosition": "Captain",
+        "playerImage": "../../../assets/images/virat.jpg"
+    },
+    {
+        "playerId": 3,
+        "playerName": "Ravindra Jadeja",
+        "playerPosition": "All - Rounder",
+        "playerImage": "../../../assets/images/jaddu.jpg"
+    },
+    {
+        "playerId": 4,
+        "playerName": "MS Dhoni",
+        "playerPosition": "Wicket Keeper",
+        "playerImage": "../../../assets/images/dhoni.jpg"
+    },
+    {
+        "playerId": 5,
+        "playerName": "Bhuvneshwar Kumar",
+        "playerPosition": "Swinger",
+        "playerImage": "../../../assets/images/bhuvi.jpg"
+    },
+    {
+        "playerId": 6,
+        "playerName": "Jasprit Bumrah",
+        "playerPosition": "Seamer",
+        "playerImage": "../../../assets/images/bumrah.jpg"
+    }
+]

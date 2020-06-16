@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-blue">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/" (click)="setPageTitle('Blogger')">
+            <img src="../../assets/images/icon1.jpg" alt="IndianCricketTeam" />
+        </a>
+        <a routerLink="/India" routerLinkActive="active" class="navbar-brand mr-3">
+            <h1>Indian - Team</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/" routerLinkActive="active" (click)="setPageTitle('Home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/PlayersFeatures" routerLinkActive="active" (click)="setPageTitle('Information')">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/MatchSchedule" routerLinkActive="active" (click)="setPageTitle('Match - Schedule')">Match - Schedule</a>
+                    </li>
+            </ul>
+
+            <ul class="navbar-nav  ml-auto">
+                <li class="nav-item" *ngIf="check()">
+                    <h1><b>Welcome, {{name}}</b></h1>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav  ml-auto">
+                <li class="nav-item" *ngIf="!check()">
+                    <a class="nav-link" routerLink="/Login" routerLinkActive="active">
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="check()">
+                    <a class="nav-link" routerLink="/Login" routerLinkActive="active">
+                        <button class="btn btn-primary" type="submit">Logout</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

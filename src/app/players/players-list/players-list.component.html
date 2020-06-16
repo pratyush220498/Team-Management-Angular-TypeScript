@@ -1,0 +1,25 @@
+<section class="blog-list mtb-40">
+    <div class="container">
+        <h1>{{title}}</h1>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let player of players">
+                <div class="blog-box">
+                    <img src="{{player.playerImage}}" alt="blog1" />
+                    <h3>{{player.playerName}}</h3>
+                    <div *ngIf="checkUser()">
+                        <button class="btn btn-primary" type="submit" (click)="show(player.playerId)">Player-details</button>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div *ngIf="checkUser()">
+                        <button class="btn btn-primary" type="submit" (click)="add(player.playerId)">Add-To-Team</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service-error" *ngIf="error">
+            <h1>{{error}}</h1>
+        </div>
+    </div>
+</section>
